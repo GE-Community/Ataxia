@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Weapons/TestGun.tres" type="CubeMesh" id=1]
+
+[node name="MeshInstance" type="MeshInstance"]
+transform = Transform( 0.118972, 0, 0, 0, 0.0969388, 0, 0, 0, 0.677844, 0, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null

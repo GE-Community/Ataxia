@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Weapons/Item.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Models/LowPolyShotgun.tscn" type="PackedScene" id=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.0799818, 0.1, 0.518855 )
+
+[node name="ShotgunItem" type="RigidBody" groups=[
+"Item",
+]]
+collision_layer = 16
+collision_mask = 17
+script = ExtResource( 1 )
+in_hand = "res://Weapons/RayBased/Shotgun.tscn"
+
+[node name="LowPolyShotgun" parent="." instance=ExtResource( 2 )]
+transform = Transform( -4.98177e-09, 1.14965e-10, 0.114, 0.00263012, 0.11397, 5.80879e-16, -0.11397, 0.00263012, -4.9831e-09, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 1 )
